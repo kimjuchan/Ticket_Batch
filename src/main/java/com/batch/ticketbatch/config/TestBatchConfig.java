@@ -1,3 +1,4 @@
+
 package com.batch.ticketbatch.config;
 
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,7 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 public class TestBatchConfig {
 
+
 /*
      * Spring Batch 5.2 이상부터 BuilderFactory deprecated  --> 가장 흔한 4.x 버젼 기준으로 작업 진행.
      *
@@ -28,7 +30,7 @@ public class TestBatchConfig {
      * */
 
 
-    private final JobBuilderFactory jobBuilderFactory;
+    /*private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
 
@@ -45,7 +47,6 @@ public class TestBatchConfig {
     @Bean
     public Job TestJob(){
         return this.jobBuilderFactory.get("testJob").start(TestStep()).build();
-    }
-
+    }*/
 
 }
